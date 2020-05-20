@@ -21,7 +21,7 @@ export default function Scoreboard() {
 
   // sorting by name
   function compare_name(player_a, player_b) {
-    return ("" + player_a.name).localeCompare(player_b.name);
+    return player_a.name.localeCompare(player_b.name);
   }
 
   const change_sorting = (event) => {
